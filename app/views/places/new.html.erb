@@ -1,0 +1,10 @@
+<h1>
+Add a New Place
+</h1>
+
+<%= form_with model: Place.new do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+    <%= form.submit %>
+<%end%>
+

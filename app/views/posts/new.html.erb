@@ -1,0 +1,24 @@
+<h1>
+    Create a New Post 
+</h1>
+
+<%= form_with model: @post do |form| %>
+    <%= form.hidden_field :place_id, value: @post.place_id %>
+    <%= form.label "Title" %>
+    <%= form.text_field :title %>
+    <br>
+    <br>
+    <br>
+    <%= form.label "Description" %>
+    <%= form.text_area :description %>
+    <br>
+    <br>
+    <br>
+    <%= form.label "Date" %>
+    <%= form.date_field :posted_on %>
+    <br>
+    <br>
+    <br>
+    <%= form.submit %>
+
+<%end%>
